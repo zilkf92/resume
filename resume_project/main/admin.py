@@ -15,3 +15,8 @@ from .models import (
 @admin.register(UserProfile)
 class UserProfileAdmin(admin.ModelAdmin):
     list_display = ("id", "user")
+
+
+@admin.register(ContactProfile)
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ("id", "timestamp", "name")
